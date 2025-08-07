@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036257672867",
+    "project_id": "greenleaf-1ea0a",
+    "storage_bucket": "greenleaf-1ea0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036257672867:android:fe2d9c097ca78b37614916",
+        "android_client_info": {
+          "package_name": "com.nimisitech.greenleaf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxaCGc9_c9dUA-yfE1bPYocMQjJKf2lWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036257672867:android:23fd5bbf7eec2f17614916",
+        "android_client_info": {
+          "package_name": "com.nimisitech.greenleaf_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxaCGc9_c9dUA-yfE1bPYocMQjJKf2lWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
