@@ -19,8 +19,9 @@ Future<void> _checkInternet() async{
     final result = await InternetAddress.lookup('google.com');
     if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
       return;
+      //throw ApiException.create('Kindly check your internet connection',0);
     }
-    throw ApiException.create('Kindly confirm your internet connection',0);
+    throw ApiException.create('Kindly check your internet connection',0);
   } on SocketException catch (_) {
     throw ApiException.create('Kindly confirm your internet connection',0);
   }
@@ -42,7 +43,6 @@ Future<dynamic> makeRequest(RequestType type, String path, String? body, Map<Str
   await _checkInternet();
   try {
     Uri uri = _getUri(path, params);
-    print(uri.host);
     switch (type) {
       case RequestType.POST:
         return await http.post(uri,

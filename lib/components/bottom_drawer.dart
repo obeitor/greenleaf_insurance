@@ -195,8 +195,10 @@ void getPolicyCreationSummary(BuildContext context,String policyName, String pro
                       }
                       else{
                         showLoader('Processing your insurance policy', context, ()async{
-                          await Future.delayed(Duration(seconds: 10));
                           Navigator.pop(context);
+                          /*showSuccess('Successfully logged your insurance request.\nAwaiting approval.', context, ((){
+                            Navigator.pop(context);
+                          }), 'Ok');*/
                           showError('Insurance Provider did not respond. Kindly try again later.\nFunds have been refunded to your wallet.', context);
                         });
                       }
